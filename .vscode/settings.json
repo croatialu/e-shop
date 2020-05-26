@@ -1,0 +1,7 @@
+{
+  "cSpell.words": ["commitlint"],
+  "eslint.validate": ["javascript", "javascriptreact", "vue", "typescript", "typescriptreact"],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
+}
