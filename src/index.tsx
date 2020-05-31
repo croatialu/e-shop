@@ -2,10 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
+import createApp from './entry';
+import Application from './Application';
+
+const App = createApp([Application]);
 
 ReactDOM.render(
   <React.StrictMode>
-    <div>666</div>
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );

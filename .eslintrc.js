@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['alloy', 'alloy/react', 'eslint:recommended', 'plugin:react/recommended'],
+  extends: ['alloy', 'alloy/react', 'alloy/typescript'],
   plugins: ['react-hooks', 'prettier'],
   env: {
     // 你的环境变量（包含多个预定义的全局变量）
@@ -19,7 +19,8 @@ module.exports = {
     // 自定义你的规则
     complexity: ['warn', { max: 8 }],
     'react-hooks/rules-of-hooks': 'error',
-    'react-hooks/exhaustive-deps': 'warn'
+    'react-hooks/exhaustive-deps': 'warn',
+    '@typescript-eslint/no-namespace': true
   },
   settings: {
     react: {
