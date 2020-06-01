@@ -20,7 +20,7 @@ module.exports = {
     complexity: ['warn', { max: 8 }],
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
-    '@typescript-eslint/no-namespace': true
+    '@typescript-eslint/no-namespace': 'off'
   },
   settings: {
     react: {

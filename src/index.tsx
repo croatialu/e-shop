@@ -2,10 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
-import createApp from './entry';
-import Application from './Application';
+import createApp from './Common/utils/createApp';
 
-const App = createApp([Application]);
+import Application from './Application';
+import Baskets from './Baskets';
+
+const App = createApp([Application, Baskets]);
 
 ReactDOM.render(
   <React.StrictMode>
