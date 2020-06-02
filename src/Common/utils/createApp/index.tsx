@@ -10,9 +10,7 @@ export default function createApp(moduleArr: EModule[]): () => React.ReactElemen
     moduleArr.reduce<EModule['router']>((res, item) => res.concat(item.router), [])
   );
 
-  // @ts-ignore
-  const wrapper = pipe(...moduleArr.map((v) => createStore(v.store)), createFetcher()) as (
-    node: React.ReactElement
-  ) => React.ReactElement;
+  const wrapper = pipe(createStore(moduleArr.map((v) => v.store).flat()), createFetcher());
+
   return () => wrapper(<Router />);
 }

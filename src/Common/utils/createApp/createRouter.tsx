@@ -1,7 +1,6 @@
 import React from 'react';
 import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import { EModule, N_EModule } from '../../types';
-import { divide } from 'ramda';
 
 type RouterArr = Array<Omit<N_EModule.RouterItem, 'children'>>;
 

@@ -13,5 +13,5 @@ export namespace N_EModule {
 
 export interface EModule {
   router: N_EModule.RouterItem[];
-  store: Container<any, any>;
+  store: Container<any, any> | Container<any, any>[];
 }
